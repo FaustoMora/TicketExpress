@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".menu">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:src="@drawable/buses"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SALIDA"
+            android:id="@+id/textView2"
+            android:layout_marginTop="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/lbl_salida"
+            android:textSize="30dp"
+            android:background="#6e77df"
+            android:textColor="@color/background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="HH:mm"
+            android:id="@+id/lbl_salida"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="63dp"
+            android:textSize="30dp"
+            android:background="#6e77df"
+            android:textColor="@color/background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="LLEGA EN"
+            android:id="@+id/textView3"
+            android:textSize="30dp"
+            android:background="#6e77df"
+            android:textColor="@color/background"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="39dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="HH:mm"
+            android:id="@+id/lbl_llegada"
+            android:textSize="30dp"
+            android:background="#6e77df"
+            android:textColor="@color/background"
+            android:layout_below="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket Express"
+            android:id="@+id/textView"
+            android:textSize="40dp"
+            android:padding="40dp"
+            android:textColor="@color/success"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <Button
+            android:gravity="center|center"
+            android:textSize="20sp"
+            android:textColor="@color/background"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/button_success"
+            style="@style/buton_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Mapa"
+            android:id="@+id/btn_mapa"
+            android:layout_marginStart="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:gravity="center|center"
+            android:textSize="20sp"
+            android:textColor="@color/background"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/button_success"
+            style="@style/buton_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Codigo"
+            android:id="@+id/btn_codigo"
+            android:layout_alignTop="@+id/btn_mapa"
+            android:layout_toEndOf="@+id/btn_mapa" />
+    </RelativeLayout>
+
+</FrameLayout>
